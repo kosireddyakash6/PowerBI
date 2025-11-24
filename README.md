@@ -1,10 +1,12 @@
 # POWERBI-PROJECTS
 End-to-end Power BI dashboards with data modeling, DAX measures, and business insights for real-world decision making.
-Superstore Sales Analytics Dashboard – Power BI Project
-1. Project Name
+
+
+Power BI Project Name:
+
 Superstore Sales Analytics Dashboard
 
-2. Project Purpose / Objective
+ Project Purpose / Objective:
 
         The purpose of this project is to analyze sales performance, customer segments, product categories, profit trends, and regional performance using Power BI dashboard.
 
@@ -22,7 +24,7 @@ Superstore Sales Analytics Dashboard
 
          Make data-driven decisions to improve revenue.
 
-   3.Dataset Details
+   Dataset Details:
 
          Source: Superstore Sales Dataset (Excel/CSV)
 
@@ -40,7 +42,7 @@ Superstore Sales Analytics Dashboard
 
          Date fields for trend analysis.
 
-    Key KPIs 
+    KPIs:
 
        Total Quantity: 38K
 
@@ -52,77 +54,77 @@ Superstore Sales Analytics Dashboard
 
        Average Sales: $221.86
 
-5. Charts / Visuals
+   Charts / Visuals:
 
-      Sales by Category (Bar Chart)
+                Sales by Category (Bar Chart)
 
-      Sales by Month & Year (Line Chart)
+                Sales by Month & Year (Line Chart)
 
-      Sales by Consumer (Donut Chart)
+                Sales by Consumer (Donut Chart)
 
-      Sales by Corporate (Donut Chart)
+                Sales by Corporate (Donut Chart)
 
-      Sales by Home Office (Donut Chart)
+                Sales by Home Office (Donut Chart)
 
-      Category by Year Table Summary
+                Category by Year Table Summary
 
-      Slicers: Segment, Region, Month, Year.
+                Slicers: Segment, Region, Month, Year.
 
-     These visuals help identify patterns across time, category, and customer segments.
+                These visuals help identify patterns across time, category, and customer segments.
 
-6. DAX Measures
+    DAX Measures:
 
-      Total Sales = SUM(Orders[Sales])
+              Total Sales = SUM(Orders[Sales])
 
-      Total Profit = SUM(Orders[Profit])
+              Total Profit = SUM(Orders[Profit])
 
-      Total Quantity = SUM(Orders[Quantity])
+              Total Quantity = SUM(Orders[Quantity])
 
-      Total Orders = DISTINCTCOUNT(Orders[Order ID])
+         Total Orders = DISTINCTCOUNT(Orders[Order ID])
 
-      Average Sales = AVERAGE(Orders[Sales])
+         Average Sales = AVERAGE(Orders[Sales])
 
-      YoY Sales = CALCULATE([Total Sales], DATEADD('Date'[Date], -1, YEAR))
+         YoY Sales = CALCULATE([Total Sales], DATEADD('Date'[Date], -1, YEAR))
 
-      Profit Margin = DIVIDE([Total Profit], [Total Sales])
-7. Insights
+         Profit Margin = DIVIDE([Total Profit], [Total Sales])
+   Insights:
 
-      1. Technology category contributes the highest sales, followed by Furniture and Office Supplies.
-
-
-      2. Consumer segment shows the highest purchase volume, among all customer segments.
+                     Technology category contributes the highest sales, followed by Furniture and Office Supplies.
 
 
-      3. Sales show seasonal trends, high during October–December and low during Feb–March.
+                     Consumer segment shows the highest purchase volume, among all customer segments.
 
 
-      4. Profits remain positive across all years, indicating consistent growth.
+                     Sales show seasonal trends, high during October–December and low during Feb–March.
 
 
-      5. Corporate and Home Office segments show lower sales compared to Consumer, suggesting targeted marketing potential.
+                     Profits remain positive across all years, indicating consistent growth.
 
 
-      6. Some categories show profit dips, indicating discounting or cost issues.
+                     Corporate and Home Office segments show lower sales compared to Consumer, suggesting targeted marketing potential.
 
 
-      7. Year-over-year growth trend is visible, with 2019–2020 having stronger spikes.
+                    Some categories show profit dips, indicating discounting or cost issues.
 
 
-      8. Large order count (9,994) with stable average sales value indicates strong customer demand.
+                   Year-over-year growth trend is visible, with 2019–2020 having stronger spikes.
 
 
-8. Tools Used
+                   Large order count (9,994) with stable average sales value indicates strong customer demand.
 
-      Power BI Desktop
 
-      Power Query
+ Tools Used:
 
-      DAX
+           Power BI Desktop
 
-      Excel (Dataset)
+           Power Query
+
+           DAX
+
+          Excel (Dataset)
 
      Data Modeling (Star Schema)
 
-9. Author
+ Author:
 
 Akash | Data Analyst
