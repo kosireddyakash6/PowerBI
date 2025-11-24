@@ -127,4 +127,4 @@ Superstore Sales Analytics Dashboard
 
  Author:
 
-Akash | Data Analyst
+Akash | Aspiring Data Analyst
