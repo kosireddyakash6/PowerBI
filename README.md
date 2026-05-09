@@ -1,127 +1,76 @@
 # POWERBI-PROJECTS
-End-to-end Power BI dashboards with data modeling, DAX measures, and business insights for real-world decision making.
 
-Superstore Sales Analytics Dashboard
+**Business Problem:** Retail businesses often face challenges in tracking sales growth, profitability, customer purchasing behavior, and category-level performance across regions. Lack of centralized KPI monitoring can make it difficult to identify underperforming segments, seasonal sales patterns, and profit leakage areas.
 
- Project Purpose / Objective:
+**Project Objective**Developed an end-to-end Power BI analytics dashboard to monitor sales performance, profitability trends, customer segments, and operational KPIs using the Superstore dataset. The solution enables interactive business reporting and data-driven decision-making through KPI tracking, trend analysis, and dynamic visualizations.
 
-        The purpose of this project is to analyze sales performance, customer segments, product categories, profit trends, and regional performance using Power BI dashboard.
+**Dataset Information**
+| Metric      | Details                           |
+| ----------- | --------------------------------- |
+| Dataset     | Superstore Sales Dataset          |
+| Records     | 9,994                             |
+| Tables Used | Orders, Category, Segment, Region |
+| Tools       | Power BI, DAX, Power Query, Excel |
+| Data Model  | Star Schema                       |
 
-        This dashboard helps businesses:
 
-         Identify top-selling categories and customer segments.
 
-         Track monthly/ yearly sales performance.
+**Key KPIs**
+| KPI            | Value    |
+| -------------- | -------- |
+| Total Sales    | $2.30M   |
+| Total Profit   | $286.40K |
+| Total Quantity | 38K      |
+| Total Orders   | 9,994    |
+| Average Sales  | $221.86  |
 
-         Understand profit contribution.
+**Dashboard Features**
+• KPI-driven sales and profitability monitoring
 
-         Monitor KPIs like total sales,profit,orders,and monthly patterns.
+• Dynamic filtering using Region, Segment, Month, and Year slicers
 
-         Analyze order trends and product performance.
+• Customer segment performance tracking
 
-         Make data-driven decisions to improve revenue.
+• Category and sub-category sales breakdown
 
-   Dataset Details:
+• Year-over-Year sales trend analysis
 
-         Source: Superstore Sales Dataset (Excel/CSV)
+• Profit margin and operational performance insights
 
-         Rows: 9994
+• Dynamic visualizations with drill-down insights and trend visualizations
 
-         Columns: 20
+**Data Modeling & DAX Measures**
 
-         Tables Used:
+• Built a star schema data model to improve reporting performance and analytical scalability
 
-         Orders table(Main Fact Table)
+• Created DAX measures for Total Sales, Total Profit, Profit Margin, YoY Sales, Total Orders, and Average Sales
 
-         Category/Sub-Category fields.
+• Applied Power Query transformations for data cleaning, validation, and preprocessing workflows
 
-         Region,Segment, and Customer fields.
+**Key Business Insights**
 
-         Date fields for trend analysis.
+• Technology category generated the highest overall sales contribution among all product categories
 
-    KPIs:
+• Consumer segment contributed the highest purchase volume and revenue share
 
-       Total Quantity: 38K
+• Strong seasonal sales growth observed during October–December periods
 
-       Total Sales: $2.30M
+• Corporate and Home Office segments showed lower revenue contribution, indicating opportunities for targeted customer engagement strategies
 
-       Total Profit: $286.40K
+• Certain categories showed lower profit margins despite higher sales volume, highlighting potential discounting or operational cost concerns
 
-       Total Orders: 9,994
+**Business Impact / Decision-Making Value**
 
-       Average Sales: $221.86
+• Enabled centralized KPI monitoring for sales, profit, and customer performance analysis
 
-   Charts / Visuals:
+• Improved visibility into operational sales trends and category-level profitability patterns
 
-                Sales by Category (Bar Chart)
+• Supported data-driven business decision-making through interactive reporting and trend analysis dashboards
 
-                Sales by Month & Year (Line Chart)
+**Tools & Technologies**
+Power BI | DAX | Power Query | Excel | Data Modeling | KPI Reporting
 
-                Sales by Consumer (Donut Chart)
 
-                Sales by Corporate (Donut Chart)
 
-                Sales by Home Office (Donut Chart)
 
-                Category by Year Table Summary
 
-                Slicers: Segment, Region, Month, Year.
-
-                These visuals help identify patterns across time, category, and customer segments.
-
-    DAX Measures:
-
-              Total Sales = SUM(Orders[Sales])
-
-              Total Profit = SUM(Orders[Profit])
-
-              Total Quantity = SUM(Orders[Quantity])
-
-         Total Orders = DISTINCTCOUNT(Orders[Order ID])
-
-         Average Sales = AVERAGE(Orders[Sales])
-
-         YoY Sales = CALCULATE([Total Sales], DATEADD('Date'[Date], -1, YEAR))
-
-         Profit Margin = DIVIDE([Total Profit], [Total Sales])
-   Insights:
-
-                     Technology category contributes the highest sales, followed by Furniture and Office Supplies.
-
-
-                     Consumer segment shows the highest purchase volume, among all customer segments.
-
-
-                     Sales show seasonal trends, high during October–December and low during Feb–March.
-
-
-                     Profits remain positive across all years, indicating consistent growth.
-
-
-                     Corporate and Home Office segments show lower sales compared to Consumer, suggesting targeted marketing potential.
-
-
-                    Some categories show profit dips, indicating discounting or cost issues.
-
-
-                   Year-over-year growth trend is visible, with 2019–2020 having stronger spikes.
-
-
-                   Large order count (9,994) with stable average sales value indicates strong customer demand.
-
-
- Tools Used:
-
-           Power BI Desktop
-
-           Power Query
-
-           DAX
-
-          Excel (Dataset)
-
-     Data Modeling (Star Schema)
-
- Author:
-
-Akash | Aspiring Data Analyst
